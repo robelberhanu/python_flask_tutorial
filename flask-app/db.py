@@ -29,4 +29,12 @@ def init_db():
 def init_db_command():
     """Clear the exixsting data and create new tables."""
     init_db()
-    click.echo('Initialised database.')
+
+
+
+# Register close_db() and init_db_command() funtion so that the app will be able to use them.
+
+def  init_app(app):
+    app.teardown_appcontext(close_db)
+    app.cli.add_command(init_db_command)
+
