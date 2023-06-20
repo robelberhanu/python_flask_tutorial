@@ -1,4 +1,4 @@
-Flaskr
+Flask
 ======
 
 
