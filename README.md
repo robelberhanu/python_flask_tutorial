@@ -12,7 +12,7 @@ Install
 Create a virtualenv and activate it::
 
     $ python3 -m venv env
-    $ . .venv/bin/activate
+    $ . env/bin/activate
 
 Or on Windows cmd::
 
